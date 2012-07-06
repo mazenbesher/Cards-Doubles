@@ -10,7 +10,11 @@
 }
 body {
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+	background: -moz-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+	background: gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+	background: radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
 }
 #wrapper {
 	width: 80%;
@@ -48,36 +52,53 @@ h3 {
 		background-size 0.5s ease,
 		background 0.5s ease,
 		-webkit-transform 0.5s ease 0.3s;
+	-moz-transition: 
+		-moz-background-size 0.5s ease,
+		background 0.5s ease,
+		-moz-transform 0.5s ease 0.3s;
+	transition: 
+		background-size 0.5s ease,
+		background 0.5s ease,
+		transform 0.5s ease 0.3s;
 }
 .close {
+	-moz-background-size: 80% !important;
 	background-size: 80% !important;
 	background: url(../_img/5logo.png) hsl(127, 50% ,37%) center center no-repeat !important;
 }
 .win {
 	-webkit-transform: scale(0) !important;
+	-moz-transform: scale(0) !important;
+	transform: scale(0) !important;
 }
 /*Cards*/
 .ch {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/chrome.png) hsl(127, 50% ,37%) center center no-repeat;
 }
 .ie {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/ie.png) hsl(127, 50% ,37%) center center no-repeat;
 }
 .fr {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/firefox.png) hsl(127, 50% ,37%) center center no-repeat;
 }
 .ca {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/cat.png) hsl(127, 50% ,37%) center center no-repeat;
 }
 .op {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/opera.png) hsl(127, 50% ,37%) center center no-repeat;
 }
 .sa {
+	-moz-background-size: 60%;
 	background-size: 60%;
 	background: url(../_img/safari.png) hsl(127, 50% ,37%) center center no-repeat;
 }
