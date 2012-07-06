@@ -18,6 +18,10 @@ body {
 	font-family: 'KaushanScriptRegular';
 	text-align: center;
 }
+p.note {
+	margin: 0;
+	font-size: 16pt;
+}
 h3 {
 	margin: 0 auto;
 	display: block;
