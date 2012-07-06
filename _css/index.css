@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'KaushanScriptRegular';
+    src: url('../_fonts/KaushanScript-Regular-webfont.eot');
+    src: url('../_fonts/KaushanScript-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/KaushanScript-Regular-webfont.woff') format('woff'),
+         url('../_fonts/KaushanScript-Regular-webfont.ttf') format('truetype'),
+         url('../_fonts/KaushanScript-Regular-webfont.svg#KaushanScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10+,Safari5.1+ */
+}
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	font-family: 'KaushanScriptRegular';
+	text-align: center;
+}
+h3 {
+	margin: 0 auto;
+	display: block;
+	width: 30%;
+	font-size: 2em;
+}
+#wins {
+	color: green;
+}
+#loses {
+	color: red;
+}
+.cards {
+	width: 600px;
+	margin: 0 auto;
+}
+.card {
+	width: 125px;
+	height: 125px;
+	border-radius: 10px;
+	float: left;
+	margin: 10px;
+	-webkit-transition: 
+		background-size 0.5s ease,
+		background 0.5s ease,
+		-webkit-transform 0.5s ease 0.3s;
+}
+.close {
+	background-size: 80% !important;
+	background: url(../_img/5logo.png) hsl(127, 50% ,37%) center center no-repeat !important;
+}
+.win {
+	-webkit-transform: scale(0) !important;
+}
+/*Cards*/
+.ch {
+	background-size: 60%;
+	background: url(../_img/chrome.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+.ie {
+	background-size: 60%;
+	background: url(../_img/ie.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+.fr {
+	background-size: 60%;
+	background: url(../_img/firefox.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+.ca {
+	background-size: 60%;
+	background: url(../_img/cat.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+.op {
+	background-size: 60%;
+	background: url(../_img/opera.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+.sa {
+	background-size: 60%;
+	background: url(../_img/safari.png) hsl(127, 50% ,37%) center center no-repeat;
+}
+
